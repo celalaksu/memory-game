@@ -18,6 +18,7 @@ How to play:
   Changes images match property to "false"
 
 DOWNLOAD REPO:
+
 git clone ""
   
   BUILD SMART CONTRACT 
