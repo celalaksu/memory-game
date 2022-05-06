@@ -19,7 +19,8 @@ How to play:
 
 DOWNLOAD REPO:
 
-git clone ""
+git clone https://github.com/celalaksu/memory-game.git
+
 cd memory-game
   
   BUILD SMART CONTRACT 
