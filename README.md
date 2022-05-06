@@ -4,6 +4,7 @@ This is a simple memory game smart contract. Published on near testnet account. 
 ABOUT SMART CONTRACT 
 
 This smart contract is a simple memory game.
+
 How to play:
   1- Add images to blockchain or use added images. You can add max 10 images. 
     When you send images to smart contract, smart contract duplicates images with different "id" property
