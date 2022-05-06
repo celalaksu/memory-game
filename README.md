@@ -28,7 +28,7 @@ cd memory-game
 
 DEPLOY SMART CONTRACT
 
-near deploy --accountId=<smart contract account id> --wasmFile=build/release/memory-game.wasm
+near deploy --accountId=smart_contract_account_id --wasmFile=build/release/memory-game.wasm
   
 
   
