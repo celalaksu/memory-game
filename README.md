@@ -17,4 +17,8 @@ How to play:
   4- When you check two images you can control if all images matched. When all image matches, checks best match and saves account id and check count to blockchain
   Changes images match property to "false"
 
+DOWNLOAD REPO:
+git clone ""
   
+  BUILD SMART CONTRACT 
+  yarn asb
