@@ -23,5 +23,12 @@ git clone ""
 cd memory-game
   
   BUILD SMART CONTRACT 
+
   yarn asb
+
+DEPLOY SMART CONTRACT
+
+near deploy --accountId=<smart contract account id> --wasmFile=build/release/memory-game.wasm
+  
+
   
