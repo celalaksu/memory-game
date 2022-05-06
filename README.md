@@ -20,6 +20,8 @@ How to play:
 DOWNLOAD REPO:
 
 git clone ""
+cd memory-game
   
   BUILD SMART CONTRACT 
   yarn asb
+  
