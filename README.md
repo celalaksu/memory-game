@@ -47,6 +47,9 @@ yarn
 
 yarn storage CONTRACT-ACCOUNT-ID
 
+![image](https://user-images.githubusercontent.com/32665644/167229603-3bf4cc4a-1de7-4439-835a-0dc8d663daab.png)
+
+
 GET IMAGES:
 
 npx near call CONTRACT-ACCOUNT-ID getimages '' --accountId PLAYER-ACCOUNT-ID
