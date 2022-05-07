@@ -17,6 +17,8 @@ How to play:
   4- When you check two images you can control if all images matched. When all image matches, checks best match and saves account id and check count to blockchain
   Changes images match property to "false"
 
+HOW TO DEPLOY SMART CONTRACT ON YOUR ACCOUNT
+
 DOWNLOAD REPO:
 
 git clone https://github.com/celalaksu/memory-game.git
@@ -30,6 +32,61 @@ cd memory-game
 DEPLOY SMART CONTRACT
 
 near deploy --accountId=smart_contract_account_id --wasmFile=build/release/memory-game.wasm
+
+ADD IMAGES :
+
+npx near call CONTRACT-ACCOUNT-ID '{"images_1":["image1","image2","image3"]}' --accountId PLAYER-ACCOUNT-ID
+
+TO CHECK STORAGE WITH NEAR-UTILS
+
+git clone https://github.com/near-examples/near-account-utils.git
+
+cd near-account-utils
+
+yarn
+
+yarn storage CONTRACT-ACCOUNT-ID
+
+GET IMAGES:
+
+npx near call CONTRACT-ACCOUNT-ID getimages '' --accountId PLAYER-ACCOUNT-ID
+
+OUTPUT FOR 3 IMAGES
+
+[
+  { id: 3425250194, src: 'image1', matched: false },
+  { id: 2555533092, src: 'image1', matched: false },
+  { id: 1538398916, src: 'image2', matched: false },
+  { id: 3076797832, src: 'image2', matched: false },
+  { id: 2958306723, src: 'image3', matched: false },
+  { id: 1621646150, src: 'image3', matched: false }
+]
+
+SELECT TWO IMAGE AND COMPARE:
+
+npx near call CONTRACT-ACCOUNT-ID compareimageid '{"id1":3425250194,"id2":1538398916}' --accountId PLAYER-ACCOUNT-ID
+
+OUTPUT
+
+true or false
+
+CHECK ALL IMAGES MATCHED: ( IF RETURN VALUE IS TRUE SETS BEST SKOR AND ACCOUNT )
+
+npx near call CONTRACT-ACCOUNT-ID allimagesmatched '' --accountId PLAYER-ACCOUNT-ID
+
+OUTPUT 
+
+true or false
+
+GET BEST SKORE AND ACCOUNT:
+
+npx near call CONTRACT-ACCOUNT-ID getbestscoreandaccount '' --accountId PLAYER-ACCOUNT-ID
+
+
+
+
+
+
   
 
   
