@@ -1,5 +1,6 @@
 # memory-game
 This is a simple memory game smart contract. Published on near testnet account. Developed for https://app.patika.dev/courses/near-developer-course project.
+This contract deployed to patika3.eemcs.testnet. Added three images. Best skor is 10. You can try contract from the account patika3.eemcs.testnet
 
 ABOUT SMART CONTRACT 
 
@@ -86,10 +87,5 @@ GET BEST SKORE AND ACCOUNT:
 npx near call CONTRACT-ACCOUNT-ID getbestscoreandaccount '' --accountId PLAYER-ACCOUNT-ID
 
 
-
-
-
-
-  
 
   
