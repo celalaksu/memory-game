@@ -36,7 +36,7 @@ near deploy --accountId=smart_contract_account_id --wasmFile=build/release/memor
 
 ADD IMAGES :
 
-npx near call CONTRACT-ACCOUNT-ID '{"images_1":["image1","image2","image3"]}' --accountId PLAYER-ACCOUNT-ID
+npx near call CONTRACT-ACCOUNT-ID saveimages '{"images_1":["image1","image2","image3"]}' --accountId PLAYER-ACCOUNT-ID
 
 TO CHECK STORAGE WITH NEAR-UTILS
 
