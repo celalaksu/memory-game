@@ -1,5 +1,3 @@
-[ -z "$CONTRACT" ] && echo "Missing \$CONTRACT environment variable" && exit 1
-[ -z "$ACCOUNT" ] && echo "Missing \$ACCOUNT environment variable" && exit 1
 
 echo 'Compare images'
 echo \$id1 'selected first image'
